@@ -1,7 +1,44 @@
 {
+  "name": "project_name",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "project_description",
+  "scripts": {
+    "watch:po": "po-extract --outExt=.ts --outDir=./src/i18n/dictionaries --watch --fixPo",
+    "build:po": "po-extract --outExt=.ts --outDir=./src/i18n/dictionaries --fixPo",
+    "prettier": "prettier --check ./",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
+    "typecheck": "tsc"
+  },
   "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "@types/node": "^22.10.10",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@types/react-redux": "^7.1.34",
+    "antd": "^5.23.3",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-storybook": "^0.11.2",
+    "po-extract": "^2.1.9",
+    "prettier": "^3.4.2",
     "react": "^19.0.0",
-    "redux": "^5.0.1",
-    "typescript": "^5.7.3"
+    "react-dom": "^19.0.0",
+    "react-intl": "^7.1.4",
+    "react-redux": "9.2.0",
+    "react-router-dom": "^7.1.3",
+    "redux": "4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.3.0",
+    "typescript": "^5.7.3",
+    "typescript-fsa-factory": "^0.0.12",
+    "typescript-fsa-reducers": "^1.2.2",
+    "typescript-plugin-css-modules": "^5.1.0"
+  },
+  "engines": {
+    "node": "20.*",
+    "yarn": "1.22.*"
   }
 }
