@@ -1,0 +1,39 @@
+:root {
+  --FONT_DEFAULT: SanFrancisco;
+
+  --WEIGHT_NORMAL: 500;
+  --WEIGHT_600: 600;
+
+  --OPACITY_05: 0.5;
+  --OPACITY_1: 1;
+
+  --FONT_SIZE_SUB_TEXT: 12px;
+  --FONT_SIZE_TEXT: 14px;
+
+  --LINE_HEIGHT_14: 14px;
+  --LINE_HEIGHT_16: 16px;
+  --LINE_HEIGHT_20: 20px;
+
+  /* Surface */
+  --COLOR_FOREGROUND: rgba(255, 255, 255, 1); /* #FFFFFF */
+  --COLOR_INKY_BACKGROUND: rgba(0, 0, 0, 1); /* #000000 */
+  /* Text & Icons */
+  --COLOR_PRIMARY: rgba(38, 26, 89, 1); /* #261A59 */
+  --COLOR_SUBTEXT: rgba(142, 142, 173, 1); /* #8E8EAD */
+
+  --SIZE_BORDER: 1px;
+  --SIZE_BORDER_THICK: 2px;
+  --SIZE_TOP_LINE: 4px;
+
+  --SIZE_8: 8px;
+  --SIZE_10: 10px;
+
+  --RADIUS_6: 6px;
+  --RADIUS_10: 10px;
+
+  --MARGIN_4: 4px;
+  --MARGIN_6: 6px;
+
+  --PADDING_2: 2px;
+  --PADDING_4: 4px;
+}

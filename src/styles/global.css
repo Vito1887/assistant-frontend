@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'SanFrancisco';
+  src:
+    local('SanFrancisco'),
+    url(src/assets/fonts/SFUIDisplay-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  background-color: var(--COLOR_FOREGROUND);
+}
+
+/* ------- TEXT STYLES ------- */
+
+.text {
+  font-size: var(--FONT_SIZE_TEXT);
+  line-height: var(--LINE_HEIGHT_20);
+  color: var(--COLOR_PRIMARY);
+}
+
+.subtext {
+  font-size: var(--FONT_SIZE_SUB_TEXT);
+  line-height: var(--LINE_HEIGHT_16);
+  color: var(--COLOR_PRIMARY);
+}
+
+.text-style-thick {
+  font-weight: var(--WEIGHT_600);
+}
