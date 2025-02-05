@@ -5,7 +5,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { IntlProvider } from 'src/i18n/IntlProvider';
 import { persistor, store } from 'src/utils/store';
 
-import 'antd/dist/antd.min.css';
+import 'antd/dist/reset.css';
 
 import 'src/styles/global.css';
 import 'src/styles/theme.css';

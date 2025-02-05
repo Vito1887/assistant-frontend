@@ -1,0 +1,4 @@
+.errorText {
+  margin: var(--MARGIN_6) 0 0;
+  color: var(--COLOR_NEGATIVE);
+}

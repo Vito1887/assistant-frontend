@@ -1,8 +1,21 @@
+import { Params } from 'react-router-dom';
+
+import { PAGES } from 'src/constants/navigation';
 import { Locales } from 'src/i18n';
 
 export type ID = string;
 export type Email = string;
 export type DateTime = string;
+
+export type Scheme = {
+  scheme: PAGES;
+  params?: Params;
+};
+
+export type IconBaseProps = {
+  size?: number;
+  fill?: string;
+};
 
 export type User = {
   userId: ID;

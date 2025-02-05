@@ -12,3 +12,31 @@ msgctxt "base"
 msgid "base.buttons.save"
 msgstr "Сохранить"
 
+msgctxt "base"
+msgid "components.organisms.Page.title"
+msgstr "Главная"
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.body"
+msgstr "Это не та страница, которую вы ищете :("
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.title"
+msgstr "404 Не найдено"
+
+msgctxt "base"
+msgid "components.routes.pages.Main.title"
+msgstr "Главная"
+
+msgctxt "base"
+msgid "components.routes.pages.User.notFound"
+msgstr "Пользователь не найден"
+
+msgctxt "base"
+msgid "components.routes.pages.User.title"
+msgstr "Главная страница"
+
+msgctxt "base"
+msgid "components.templates.WithHeader.goBack"
+msgstr "Вернуться на предыдущий экран"
+

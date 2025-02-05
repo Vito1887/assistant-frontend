@@ -1,0 +1,31 @@
+.headContainer {
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+  position: relative;
+  padding: var(--PADDING_8);
+}
+
+.headRow {
+  position: absolute;
+  left: 0;
+}
+
+.headContainerNew {
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+  position: relative;
+  padding: var(--PADDING_8);
+  padding-left: var(--PADDING_30);
+  padding-right: var(--PADDING_30);
+}
+
+.headRowNew {
+  position: absolute;
+  left: 0;
+  padding-left: var(--PADDING_30);
+  padding-right: var(--PADDING_30);
+}

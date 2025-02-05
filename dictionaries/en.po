@@ -12,3 +12,31 @@ msgctxt "base"
 msgid "base.buttons.save"
 msgstr "Save"
 
+msgctxt "base"
+msgid "components.organisms.Page.title"
+msgstr "Main"
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.body"
+msgstr "This is not the page you’re looking for :("
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.title"
+msgstr "404 Not found"
+
+msgctxt "base"
+msgid "components.routes.pages.Main.title"
+msgstr "Main"
+
+msgctxt "base"
+msgid "components.routes.pages.User.notFound"
+msgstr "User not found"
+
+msgctxt "base"
+msgid "components.routes.pages.User.title"
+msgstr "Main Page"
+
+msgctxt "base"
+msgid "components.templates.WithHeader.goBack"
+msgstr "Go back"
+

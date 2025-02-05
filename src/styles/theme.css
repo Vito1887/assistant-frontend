@@ -17,13 +17,19 @@
   /* Surface */
   --COLOR_FOREGROUND: rgba(255, 255, 255, 1); /* #FFFFFF */
   --COLOR_INKY_BACKGROUND: rgba(0, 0, 0, 1); /* #000000 */
+
   /* Text & Icons */
   --COLOR_PRIMARY: rgba(38, 26, 89, 1); /* #261A59 */
   --COLOR_SUBTEXT: rgba(142, 142, 173, 1); /* #8E8EAD */
+  --COLOR_NEGATIVE: rgba(253, 135, 110, 1); /* #FD876E */
+
+  /* Shadows */
+  --COLOR_SHADOW_GENERAL: rgba(179, 179, 199, 0.2); /* #B3B3C7 */
 
   --SIZE_BORDER: 1px;
   --SIZE_BORDER_THICK: 2px;
   --SIZE_TOP_LINE: 4px;
+  --PAGE_MAX_WIDTH: 435px;
 
   --SIZE_8: 8px;
   --SIZE_10: 10px;
@@ -36,4 +42,8 @@
 
   --PADDING_2: 2px;
   --PADDING_4: 4px;
+  --PADDING_10: 10px;
+  --PADDING_20: 20px;
+  --PADDING_30: 30px;
+  --PADDING_40: 40px;
 }

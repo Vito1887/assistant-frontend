@@ -3,4 +3,16 @@
 // file '/dictionaries/ru.po' and run '.po' extractor
 export const base = {
   'base.buttons.save': 'Сохранить',
+
+  'components.organisms.Page.title': 'Главная',
+
+  'components.routes.pages.Error404.title': '404 Не найдено',
+  'components.routes.pages.Main.title': 'Главная',
+  'components.routes.pages.User.notFound': 'Пользователь не найден',
+  'components.routes.pages.User.title': 'Главная страница',
+
+  'components.templates.WithHeader.goBack': 'Вернуться на предыдущий экран',
+
+  'components.routes.pages.Error404.body':
+    'Это не та страница, которую вы ищете :(',
 };
