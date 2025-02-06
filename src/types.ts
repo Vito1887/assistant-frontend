@@ -7,6 +7,8 @@ export type ID = string;
 export type Email = string;
 export type DateTime = string;
 
+export type ModalMode = 'base' | 'light' | 'inky';
+
 export type Scheme = {
   scheme: PAGES;
   params?: Params;

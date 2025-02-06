@@ -1,0 +1,96 @@
+@keyframes BaseDimmerShow {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--COLOR_POP_UP_BACKGROUND);
+  }
+}
+
+@keyframes BaseDimmerHide {
+  from {
+    background-color: var(--COLOR_POP_UP_BACKGROUND);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes LightDimmerShow {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--COLOR_BLURRED_FOREGROUND);
+    backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes LightDimmerHide {
+  from {
+    background-color: var(--COLOR_BLURRED_FOREGROUND);
+    backdrop-filter: blur(5px);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes InkyDimmerShow {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--COLOR_INKY_BACKGROUND);
+  }
+}
+
+@keyframes InkyDimmerHide {
+  from {
+    background-color: var(--COLOR_INKY_BACKGROUND);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.dimmer {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-duration: var(--TRANSITION_03);
+  animation-fill-mode: both;
+  animation-name: BaseDimmerShow;
+  animation-timing-function: ease-in;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.lightDimmer {
+  animation-name: LightDimmerShow;
+}
+
+.inkyDimmer {
+  animation-name: InkyDimmerShow;
+}
+
+.baseDimmer__hide {
+  animation-name: BaseDimmerHide;
+}
+
+.lightDimmer__hide {
+  animation-name: LightDimmerHide;
+}
+
+.inkyDimmer__hide {
+  animation-name: InkyDimmerHide;
+}
+
+.dimmer__disabled {
+  cursor: default;
+}

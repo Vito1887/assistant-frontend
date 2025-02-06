@@ -1,0 +1,105 @@
+@keyframes ModalInDesktop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ModalInMobile {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--MODAL_MOBILE);
+  }
+}
+
+@keyframes ModalOutDesktop {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes ModalOutMobile {
+  from {
+    height: var(--MODAL_MOBILE);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.modal {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  overflow-y: scroll;
+  border-radius: var(--RADIUS_16) var(--RADIUS_16) 0 0;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: ModalInMobile;
+  animation-timing-function: ease-in;
+  z-index: 1001;
+}
+
+.modal__hide {
+  animation-name: ModalOutMobile;
+}
+
+.close {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.closeLine {
+  position: fixed;
+  border-color: transparent;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.closeCross {
+  width: var(--SIZE_40);
+  aspect-ratio: 1;
+  position: fixed;
+  right: 0;
+  margin-top: var(--MARGIN_10);
+  margin-right: var(--MARGIN_10);
+  border-radius: 50%;
+  border: none;
+  background-color: var(--COLOR_FOREGROUND);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: var(--RADIUS_16) var(--RADIUS_16) 0 0;
+}
+
+@media all and (min-width: 500px) {
+  .modal {
+    animation-name: ModalInDesktop;
+    bottom: auto;
+  }
+
+  .modal__hide {
+    animation-name: none;
+  }
+
+  .closeCross {
+    position: absolute;
+    cursor: pointer;
+  }
+}
