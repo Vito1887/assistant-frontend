@@ -13,3 +13,5 @@ export const ViewPictureModal: React.FC<Props> = ({ picture }) => (
     )}
   </div>
 );
+
+export default ViewPictureModal;

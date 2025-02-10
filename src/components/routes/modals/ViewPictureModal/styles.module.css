@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
 }
 
 .picture {
@@ -13,5 +12,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
 }

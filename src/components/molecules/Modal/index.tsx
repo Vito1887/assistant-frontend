@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 
 import { Dimmer } from 'src/components/atoms/Dimmer';
 import { CloseLine } from 'src/components/atoms/icons/CloseLine';
-import { Cross } from 'src/components/atoms/icons/Cross';
+import { Cross } from 'src/components/atoms/icons/iteractions/Cross';
 import { useUnmount } from 'src/hooks/useUnmount';
 
 import styles from './styles.module.css';

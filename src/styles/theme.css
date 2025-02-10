@@ -23,6 +23,7 @@
   /* Surface */
   --COLOR_FOREGROUND: rgba(255, 255, 255, 1); /* #FFFFFF */
   --COLOR_BLURRED_FOREGROUND: rgba(255, 255, 255, 0.3); /* #FFFFFF */
+  --COLOR_SECONDARY_BACKGROUND: rgba(243, 245, 251, 1); /* #F3F5FB */
   --COLOR_POP_UP_BACKGROUND: rgba(38, 26, 89, 0.9); /* #261A59 */
   --COLOR_INKY_BACKGROUND: rgba(0, 0, 0, 1); /* #000000 */
 
@@ -30,18 +31,31 @@
   --COLOR_PRIMARY: rgba(38, 26, 89, 1); /* #261A59 */
   --COLOR_SUBTEXT: rgba(142, 142, 173, 1); /* #8E8EAD */
   --COLOR_NEGATIVE: rgba(253, 135, 110, 1); /* #FD876E */
+  --COLOR_POSITIVE_DEFAULT: rgba(86, 173, 113, 1); /* #56AD71 */
+
+  /* Buttons & Accent Colors */
+  --COLOR_POSITIVE: rgba(86, 173, 113, 1); /* #56AD71 */
+  --COLOR_POSITIVE_PRESSED: rgba(91, 188, 121, 1); /* #5BBC79 */
+
+  /* Strokes */
+  --COLOR_STROKE_LIGHT: rgba(237, 237, 237, 1); /* #EDEDED */
 
   /* Shadows */
   --COLOR_SHADOW_GENERAL: rgba(179, 179, 199, 0.2); /* #B3B3C7 */
+  --COLOR_SHADOW_POSITIVE: rgba(109, 190, 134, 0.5); /* #6DBE8680 */
 
   --SIZE_BORDER: 1px;
   --SIZE_BORDER_THICK: 2px;
   --SIZE_TOP_LINE: 4px;
+  --CONTENT_MAX_WIDTH: 335px;
   --PAGE_MAX_WIDTH: 435px;
 
   --SIZE_8: 8px;
   --SIZE_10: 10px;
+  --SIZE_16: 16px;
   --SIZE_40: 40px;
+  --SIZE_60: 60px;
+  --SIZE_190: 190px;
 
   --RADIUS_6: 6px;
   --RADIUS_10: 10px;

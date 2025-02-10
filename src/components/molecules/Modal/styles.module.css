@@ -88,10 +88,13 @@
   border-radius: var(--RADIUS_16) var(--RADIUS_16) 0 0;
 }
 
+.content_withBackground {
+  background-color: var(--COLOR_FOREGROUND);
+}
+
 @media all and (min-width: 500px) {
   .modal {
     animation-name: ModalInDesktop;
-    bottom: auto;
   }
 
   .modal__hide {
@@ -99,7 +102,6 @@
   }
 
   .closeCross {
-    position: absolute;
     cursor: pointer;
   }
 }
