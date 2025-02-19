@@ -1,4 +1,4 @@
-import actionFacory from 'typescript-fsa-factory';
+import actionsFactory from 'typescript-fsa-factory';
 
 import { ENDPOINTS, Endpoints } from 'src/constants/api';
 
@@ -10,6 +10,6 @@ export const {
   actionCreator,
   actionCreatorAsyncWithHandler,
   registerAsyncActions,
-} = actionFacory<Endpoints, { hideErrorNotification?: boolean }>(ENDPOINTS, {
+} = actionsFactory<Endpoints, { hideErrorNotification?: boolean }>(ENDPOINTS, {
   withCredentials: true,
 });
