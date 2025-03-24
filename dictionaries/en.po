@@ -13,6 +13,14 @@ msgid "base.buttons.save"
 msgstr "Save"
 
 msgctxt "base"
+msgid "components.atoms.Calendar.month"
+msgstr "Month"
+
+msgctxt "base"
+msgid "components.atoms.Calendar.year"
+msgstr "Year"
+
+msgctxt "base"
 msgid "components.organisms.Page.title"
 msgstr "Main"
 
@@ -39,4 +47,128 @@ msgstr "Main Page"
 msgctxt "base"
 msgid "components.templates.WithHeader.goBack"
 msgstr "Go back"
+
+msgctxt "base"
+msgid "constants.ui.months.april"
+msgstr "April"
+
+msgctxt "base"
+msgid "constants.ui.months.august"
+msgstr "August"
+
+msgctxt "base"
+msgid "constants.ui.months.december"
+msgstr "December"
+
+msgctxt "base"
+msgid "constants.ui.months.february"
+msgstr "February"
+
+msgctxt "base"
+msgid "constants.ui.months.january"
+msgstr "January"
+
+msgctxt "base"
+msgid "constants.ui.months.july"
+msgstr "July"
+
+msgctxt "base"
+msgid "constants.ui.months.june"
+msgstr "June"
+
+msgctxt "base"
+msgid "constants.ui.months.march"
+msgstr "March"
+
+msgctxt "base"
+msgid "constants.ui.months.may"
+msgstr "May"
+
+msgctxt "base"
+msgid "constants.ui.months.november"
+msgstr "November"
+
+msgctxt "base"
+msgid "constants.ui.months.october"
+msgstr "October"
+
+msgctxt "base"
+msgid "constants.ui.months.september"
+msgstr "September"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.april"
+msgstr "Apr"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.august"
+msgstr "Aug"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.december"
+msgstr "Dec"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.february"
+msgstr "Feb"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.january"
+msgstr "Jan"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.july"
+msgstr "Jul"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.june"
+msgstr "Jun"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.march"
+msgstr "Mar"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.may"
+msgstr "May"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.november"
+msgstr "Nov"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.october"
+msgstr "Oct"
+
+msgctxt "base"
+msgid "constants.ui.monthsShort.september"
+msgstr "Sep"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.friday"
+msgstr "Fri"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.monday"
+msgstr "Mon"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.saturday"
+msgstr "Sat"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.sunday"
+msgstr "Sun"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.thursday"
+msgstr "Thu"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.tuesday"
+msgstr "Tue"
+
+msgctxt "base"
+msgid "constants.ui.weekdaysShort.wednesday"
+msgstr "Wed"
 

@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  background-color: var(--COLOR_FOREGROUND);
+  height: var(--SIZE_40);
+  width: var(--SIZE_40);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--RADIUS_24);
+  margin: 0 auto; /* pixel perfect */
+  flex-direction: column;
+}
+
+.todayWorkday {
+  background-color: var(--COLOR_POSITIVE_DEFAULT);
+  color: var(--COLOR_FOREGROUND);
+}
+
+.workday .dot {
+  background-color: var(--COLOR_POSITIVE_DEFAULT);
+}
+
+.workday {
+  border: var(--SIZE_BORDER) solid var(--COLOR_POSITIVE_DEFAULT);
+  background-color: var(--COLOR_POSITIVE_SURFACE);
+  color: var(--COLOR_POSITIVE_DEFAULT);
+}
+
+.gray {
+  color: var(--COLOR_SUBTEXT);
+}
+
+.default {
+  color: var(--COLOR_PRIMARY);
+}
+
+.dot {
+  height: 3px; /* pixel perfect */
+  width: 3px; /* pixel perfect */
+  border-radius: var(--RADIUS_5);
+  background-color: var(--COLOR_FOREGROUND);
+}

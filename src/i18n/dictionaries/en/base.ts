@@ -4,14 +4,52 @@
 export const base = {
   'base.buttons.save': 'Save',
 
+  'components.atoms.Calendar.month': 'Month',
+  'components.atoms.Calendar.year': 'Year',
+
   'components.organisms.Page.title': 'Main',
 
   'components.routes.pages.Error404.body':
     'This is not the page you’re looking for :(',
   'components.routes.pages.Error404.title': '404 Not found',
   'components.routes.pages.Main.title': 'Main',
+
+  'constants.ui.months.april': 'April',
+  'constants.ui.months.august': 'August',
+  'constants.ui.months.december': 'December',
+  'constants.ui.months.february': 'February',
+  'constants.ui.months.january': 'January',
+  'constants.ui.months.july': 'July',
+  'constants.ui.months.june': 'June',
+  'constants.ui.months.march': 'March',
+  'constants.ui.months.may': 'May',
+  'constants.ui.months.november': 'November',
+  'constants.ui.months.october': 'October',
+  'constants.ui.months.september': 'September',
+
   'components.routes.pages.User.notFound': 'User not found',
   'components.routes.pages.User.title': 'Main Page',
 
   'components.templates.WithHeader.goBack': 'Go back',
+
+  'constants.ui.monthsShort.april': 'Apr',
+  'constants.ui.monthsShort.august': 'Aug',
+  'constants.ui.monthsShort.december': 'Dec',
+  'constants.ui.monthsShort.february': 'Feb',
+  'constants.ui.monthsShort.january': 'Jan',
+  'constants.ui.monthsShort.july': 'Jul',
+  'constants.ui.monthsShort.june': 'Jun',
+  'constants.ui.monthsShort.march': 'Mar',
+  'constants.ui.monthsShort.may': 'May',
+  'constants.ui.monthsShort.november': 'Nov',
+  'constants.ui.monthsShort.october': 'Oct',
+  'constants.ui.monthsShort.september': 'Sep',
+
+  'constants.ui.weekdaysShort.friday': 'Fri',
+  'constants.ui.weekdaysShort.monday': 'Mon',
+  'constants.ui.weekdaysShort.saturday': 'Sat',
+  'constants.ui.weekdaysShort.sunday': 'Sun',
+  'constants.ui.weekdaysShort.thursday': 'Thu',
+  'constants.ui.weekdaysShort.tuesday': 'Tue',
+  'constants.ui.weekdaysShort.wednesday': 'Wed',
 };

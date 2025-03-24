@@ -4,14 +4,52 @@
 export const base = {
   'base.buttons.save': 'Сохранить',
 
+  'components.atoms.Calendar.month': 'Месяц',
+  'components.atoms.Calendar.year': 'Год',
+
   'components.organisms.Page.title': 'Главная',
 
   'components.routes.pages.Error404.body':
     'Это не та страница, которую вы ищете :(',
   'components.routes.pages.Error404.title': '404 Не найдено',
   'components.routes.pages.Main.title': 'Главная',
+
+  'constants.ui.months.april': 'Апрель',
+  'constants.ui.months.august': 'Август',
+  'constants.ui.months.december': 'Декабрь',
+  'constants.ui.months.february': 'Февраль',
+  'constants.ui.months.january': 'Январь',
+  'constants.ui.months.july': 'Июль',
+  'constants.ui.months.june': 'Июнь',
+  'constants.ui.months.march': 'Март',
+  'constants.ui.months.may': 'Май',
+  'constants.ui.months.november': 'Ноябрь',
+  'constants.ui.months.october': 'Октябрь',
+  'constants.ui.months.september': 'Сентябрь',
+
   'components.routes.pages.User.notFound': 'Пользователь не найден',
   'components.routes.pages.User.title': 'Главная страница',
 
   'components.templates.WithHeader.goBack': 'Вернуться на предыдущий экран',
+
+  'constants.ui.monthsShort.april': 'Апр',
+  'constants.ui.monthsShort.august': 'Авг',
+  'constants.ui.monthsShort.december': 'Дек',
+  'constants.ui.monthsShort.february': 'Фев',
+  'constants.ui.monthsShort.january': 'Янв',
+  'constants.ui.monthsShort.july': 'Июл',
+  'constants.ui.monthsShort.june': 'Июн',
+  'constants.ui.monthsShort.march': 'Мар',
+  'constants.ui.monthsShort.may': 'Май',
+  'constants.ui.monthsShort.november': 'Ноя',
+  'constants.ui.monthsShort.october': 'Окт',
+  'constants.ui.monthsShort.september': 'Сен',
+
+  'constants.ui.weekdaysShort.friday': 'Пт',
+  'constants.ui.weekdaysShort.monday': 'Пн',
+  'constants.ui.weekdaysShort.saturday': 'Сб',
+  'constants.ui.weekdaysShort.sunday': 'Вс',
+  'constants.ui.weekdaysShort.thursday': 'Чт',
+  'constants.ui.weekdaysShort.tuesday': 'Вт',
+  'constants.ui.weekdaysShort.wednesday': 'Ср',
 };

@@ -1,11 +1,12 @@
 import { Params } from 'react-router-dom';
 
 import { PAGES } from 'src/constants/navigation';
-import { Locales } from 'src/i18n';
+import { DictionaryKey, Locales } from 'src/i18n';
 
 export type ID = string;
+export type TDate = string;
+export type Time = string;
 export type Email = string;
-export type DateTime = string;
 
 export type ModalMode = 'base' | 'light' | 'inky';
 
@@ -24,6 +25,11 @@ export type User = {
   name: string;
   phone: string;
   email: Email;
+};
+
+export type Weekday = {
+  index: number;
+  day: DictionaryKey;
 };
 
 export type GeoInfo = {
