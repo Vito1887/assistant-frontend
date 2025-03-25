@@ -2,7 +2,7 @@ export enum PAGES {
   MAIN = '/',
   ERROR_404 = '*',
 
-  USER = '/:orderUID',
+  // USER = '/:orderUID',
 }
 
 export const routes = Object.values(PAGES)
