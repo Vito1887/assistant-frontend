@@ -16,7 +16,7 @@
     "postinstall": "husky install",
     "typecheck": "tsc",
     "devTools": "node devTools/index.js",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs -b main"
   },
   "dependencies": {
     "@storybook/addon-essentials": "^8.5.3",

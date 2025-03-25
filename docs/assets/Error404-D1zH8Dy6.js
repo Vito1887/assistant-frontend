@@ -1,1 +1,0 @@
-import{ao as r}from"./index-BzBnv6Pj.js";import{P as o,M as s}from"./index-1YMDikhN.js";const a=()=>r.jsx(o,{template:"entry",children:r.jsx(s,{id:"components.routes.pages.Error404.body"})});export{a as default};
