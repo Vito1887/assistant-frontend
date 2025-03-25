@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react(), svgr()],
   server: { port: 3000, hmr: { overlay: false } },
   build: {
-    outDir: 'build',
+    outDir: 'docs',
   },
   resolve: {
     alias: {
