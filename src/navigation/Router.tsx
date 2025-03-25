@@ -32,6 +32,7 @@ export const Router: React.FC = () => {
 
   return (
     <BrowserRouter
+      basename="/assistant-frontend"
       location={state.location}
       navigationType={state.action}
       navigator={history}

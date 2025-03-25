@@ -13,7 +13,7 @@
     <title>Project name</title>
 
     <link rel="icon" href="/assistant-frontend/favicon.ico" />
-    <script type="module" crossorigin src="/assistant-frontend/assets/index-DvqmFUKb.js"></script>
+    <script type="module" crossorigin src="/assistant-frontend/assets/index-BgqBfZLU.js"></script>
     <link rel="stylesheet" crossorigin href="/assistant-frontend/assets/index-jwgPV0VL.css">
   </head>
 
@@ -22,5 +22,15 @@
 
     <div id="root"></div>
 
+
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.pathname) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
