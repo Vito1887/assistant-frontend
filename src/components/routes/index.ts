@@ -23,6 +23,11 @@ export const pages: Record<PAGES, PageRoute> = {
     title: 'components.routes.pages.Main.title',
     component: lazy(() => import('src/components/routes/pages/Main')),
   },
+  // [PAGES.CALENDAR]: {
+  //   access: 'all',
+  //   title: 'components.routes.pages.User.title',
+  //   component: lazy(() => import('src/components/routes/pages/User')),
+  // },
   // [PAGES.USER]: {
   //   access: 'all',
   //   title: 'components.routes.pages.User.title',

@@ -1,6 +1,6 @@
 export enum PAGES {
-  MAIN = '/',
-  ERROR_404 = '*',
+  MAIN = '/calendar',
+  ERROR_404 = '/error',
 
   // USER = '/:orderUID',
 }
