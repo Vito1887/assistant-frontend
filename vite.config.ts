@@ -8,6 +8,7 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [react(), svgr()],
   server: { port: 3000, hmr: { overlay: false } },
+  base: '/assistant-frontend',
   build: {
     outDir: 'docs',
   },

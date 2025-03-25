@@ -15,7 +15,8 @@
     "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
     "postinstall": "husky install",
     "typecheck": "tsc",
-    "devTools": "node devTools/index.js"
+    "devTools": "node devTools/index.js",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@storybook/addon-essentials": "^8.5.3",
@@ -69,5 +70,8 @@
   "engines": {
     "node": "20.*",
     "yarn": "1.22.*"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
