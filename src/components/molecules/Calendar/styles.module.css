@@ -3,3 +3,17 @@
   font-weight: var(--WEIGHT_NORMAL);
   color: var(--COLOR_PRIMARY);
 }
+
+:global(.ant-picker-cell-disabled),
+:global(.ant-picker-cell-disabled .ant-picker-cell-inner),
+:global(.ant-picker-cell.ant-picker-cell-disabled),
+:global(.ant-picker-cell.ant-picker-cell-disabled .ant-picker-cell-inner),
+:global(.ant-picker-cell.ant-picker-cell-disabled:before),
+:global(.ant-picker-calendar-date-content),
+:global(.ant-picker-calendar-date.ant-picker-cell-disabled) {
+  background-color: transparent !important;
+}
+
+:global(.ant-picker-cell-disabled:hover .ant-picker-cell-inner) {
+  background-color: transparent !important;
+}
