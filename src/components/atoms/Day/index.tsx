@@ -41,7 +41,8 @@ export const Day: React.FC<Props> = ({
       visible={!outMonth}
       className={classNames(styles.container, styleBody)}
     >
-      <p>{day}</p>
+      <p className={styles.dayTitle}>{day}</p>
+
       {isSelectSlot && <div className={styles.dot}></div>}
     </Box>
   );

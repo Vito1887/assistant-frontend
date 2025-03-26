@@ -5,6 +5,8 @@ import { MonthPicker } from 'src/components/molecules/MonthPicker';
 import { Page } from 'src/components/organisms/Page';
 import { getDate, toDayJsDate } from 'src/utils/dates';
 
+import styles from './styles.module.css';
+
 const Main: React.FC = () => {
   const currentDate = getDate();
 
@@ -16,17 +18,22 @@ const Main: React.FC = () => {
 
   return (
     <Page template="entry">
-      <Calendar
-        onSelect={setDate}
-        currentDate={toDayJsDate(date)}
-        workDays={weekdays}
-      />
+      <div className={styles.calendarBlock}>
+        <Calendar
+          onSelect={setDate}
+          currentDate={toDayJsDate(date)}
+          workDays={weekdays}
+          freeSlots={[]}
+        />
+      </div>
 
-      <MonthPicker
-        date={date}
-        setDate={setDate}
-        disableLeftPress={disableLeftPress}
-      />
+      <div className={styles.pickerBlock}>
+        <MonthPicker
+          date={date}
+          setDate={setDate}
+          disableLeftPress={disableLeftPress}
+        />
+      </div>
     </Page>
   );
 };

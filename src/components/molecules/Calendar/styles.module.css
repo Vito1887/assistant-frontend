@@ -1,4 +1,5 @@
 .header {
   margin-bottom: var(--MARGIN_20);
+  font-weight: var(--WEIGHT_NORMAL);
   color: var(--COLOR_PRIMARY);
 }

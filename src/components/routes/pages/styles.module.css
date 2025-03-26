@@ -1,0 +1,7 @@
+.calendarBlock {
+  min-height: var(--CALENDAR_MIN_HEIGHT);
+}
+
+.pickerBlock {
+  min-width: var(--SIZE_160);
+}

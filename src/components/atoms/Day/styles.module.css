@@ -1,41 +1,48 @@
 .container {
-  display: flex;
-  background-color: var(--COLOR_FOREGROUND);
-  height: var(--SIZE_40);
   width: var(--SIZE_40);
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   border-radius: var(--RADIUS_24);
-  margin: 0 auto; /* pixel perfect */
-  flex-direction: column;
+  font-weight: var(--WEIGHT_NORMAL);
+  background-color: var(--COLOR_FOREGROUND);
 }
 
 .todayWorkday {
-  background-color: var(--COLOR_POSITIVE_DEFAULT);
   color: var(--COLOR_FOREGROUND);
+  background-color: var(--COLOR_POSITIVE);
+}
+
+.dayTitle {
+  margin: 0;
 }
 
 .workday .dot {
-  background-color: var(--COLOR_POSITIVE_DEFAULT);
+  background-color: var(--COLOR_POSITIVE);
 }
 
 .workday {
-  border: var(--SIZE_BORDER) solid var(--COLOR_POSITIVE_DEFAULT);
-  background-color: var(--COLOR_POSITIVE_SURFACE);
-  color: var(--COLOR_POSITIVE_DEFAULT);
+  border: var(--SIZE_BORDER) solid var(--COLOR_POSITIVE);
+  color: var(--COLOR_POSITIVE);
+  background-color: var(--COLOR_SUCCESS_BACKGROUND);
 }
 
 .gray {
+  font-weight: var(--WEIGHT_NORMAL);
   color: var(--COLOR_SUBTEXT);
 }
 
 .default {
+  font-weight: var(--WEIGHT_NORMAL);
   color: var(--COLOR_PRIMARY);
 }
 
 .dot {
   height: 3px; /* pixel perfect */
   width: 3px; /* pixel perfect */
-  border-radius: var(--RADIUS_5);
+  border-radius: var(--RADIUS_6);
   background-color: var(--COLOR_FOREGROUND);
 }

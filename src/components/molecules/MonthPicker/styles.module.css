@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   height: var(--SIZE_60);
@@ -10,31 +11,26 @@
 }
 
 .button {
-  background-color: transparent;
-  padding: 0; /* pixel perfect */
   width: var(--SIZE_30);
-  height: 100%; /* pixel perfect */
-  border: 0; /* pixel perfect */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.rightButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .leftButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: rotate(180deg);
 }
 
 .monthText {
-  line-height: 22px; /* pixel perfect */
-  font-size: 17px; /* pixel perfect */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: var(--FONT_SIZE_18);
+  font-weight: var(--WEIGHT_NORMAL);
   color: var(--COLOR_PRIMARY);
 }

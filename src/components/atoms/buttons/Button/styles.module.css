@@ -9,7 +9,6 @@
 .primary {
   width: 100%;
   box-sizing: border-box;
-  background: var(--COLOR_POSITIVE_DEFAULT);
   border: none;
   text-decoration: none;
   color: var(--COLOR_FOREGROUND);
@@ -17,6 +16,7 @@
     opacity var(--TRANSITION_05) ease,
     background var(--TRANSITION_05) ease;
   opacity: var(--OPACITY_1);
+  background-color: var(--COLOR_POSITIVE);
   box-shadow: 0 4px 15px var(--COLOR_SHADOW_POSITIVE);
 }
 
