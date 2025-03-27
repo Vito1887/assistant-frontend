@@ -2,6 +2,8 @@
 // If you want to change the content of this file, you need to edit
 // file '/dictionaries/ru.po' and run '.po' extractor
 export const base = {
+  'base.buttons.currentDate': 'Текущая дата',
+
   'base.buttons.save': 'Сохранить',
 
   'components.atoms.Calendar.month': 'Месяц',
@@ -12,7 +14,17 @@ export const base = {
   'components.routes.pages.Error404.body':
     'Это не та страница, которую вы ищете :(',
   'components.routes.pages.Error404.title': '404 Не найдено',
+  'components.routes.pages.Main.noMeetings':
+    'На данный день встреч не назначено.',
+  'components.routes.pages.Main.oneMeeting':
+    'В этот день назначена встреча на время:',
+  'components.routes.pages.Main.severalMeetings':
+    'В этот день назначены встречи на время:',
   'components.routes.pages.Main.title': 'Главная',
+  'components.routes.pages.User.notFound': 'Пользователь не найден',
+  'components.routes.pages.User.title': 'Главная страница',
+
+  'components.templates.WithHeader.goBack': 'Вернуться на предыдущий экран',
 
   'constants.ui.months.april': 'Апрель',
   'constants.ui.months.august': 'Август',
@@ -26,11 +38,6 @@ export const base = {
   'constants.ui.months.november': 'Ноябрь',
   'constants.ui.months.october': 'Октябрь',
   'constants.ui.months.september': 'Сентябрь',
-
-  'components.routes.pages.User.notFound': 'Пользователь не найден',
-  'components.routes.pages.User.title': 'Главная страница',
-
-  'components.templates.WithHeader.goBack': 'Вернуться на предыдущий экран',
 
   'constants.ui.monthsShort.april': 'Апр',
   'constants.ui.monthsShort.august': 'Авг',

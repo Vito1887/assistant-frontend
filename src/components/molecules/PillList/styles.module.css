@@ -1,0 +1,12 @@
+.container {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pillBlock {
+  margin-right: var(--MARGIN_4);
+}

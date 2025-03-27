@@ -4,7 +4,7 @@ import { PAGES } from 'src/constants/navigation';
 import { DictionaryKey, Locales } from 'src/i18n';
 
 export type ID = string;
-export type TDate = string;
+export type Date = string;
 export type Time = string;
 export type Email = string;
 
@@ -25,6 +25,13 @@ export type User = {
   name: string;
   phone: string;
   email: Email;
+};
+
+export type Visit = {
+  id: string;
+  date: Date;
+  time: Time;
+  extraData?: string;
 };
 
 export type Weekday = {

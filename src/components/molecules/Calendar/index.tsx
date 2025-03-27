@@ -1,45 +1,29 @@
 import AntdCalendar from 'antd/lib/calendar';
-import { Dayjs } from 'dayjs';
 import React from 'react';
 import { useIntl } from 'react-intl';
 
 import { Day } from 'src/components/atoms/Day';
 import { monthsShort, weekdaysShort } from 'src/constants/ui';
 import { msg } from 'src/i18n/Msg';
-import { TDate, Time } from 'src/types';
 import {
   DateFormats,
   getDate,
-  getDayWeeks,
   isSameDate,
+  toDayJsDate,
   toShortDate,
 } from 'src/utils/dates';
 
 import styles from './styles.module.css';
 
 type Props = {
+  selectedDay: string;
   onSelect: (date: string) => void;
-  currentDate: Dayjs;
-  freeSlots?: {
-    date: TDate;
-    isFree: boolean;
-    freeSlots: Time[];
-  }[];
-  workDays: boolean[];
-  selectedDay?: {
-    date: string;
-  };
 };
 
-export const Calendar: React.FC<Props> = ({
-  onSelect,
-  currentDate,
-  workDays,
-  freeSlots,
-  selectedDay,
-}) => {
+export const Calendar: React.FC<Props> = ({ selectedDay, onSelect }) => {
   const intl = useIntl();
-  const today = getDate();
+
+  const currentDate = toDayJsDate(selectedDay);
 
   const shortWeekdays = weekdaysShort.map((_, index) =>
     msg(intl, { id: weekdaysShort[index].day })
@@ -54,36 +38,13 @@ export const Calendar: React.FC<Props> = ({
     '\n' +
     getDate(currentDate, DateFormats.YYYY);
 
-  const disabledDate = (date: Dayjs) => {
-    const current = currentDate;
-
-    const freeSlotsForCurrentDay = (freeSlots || []).filter(
-      (el) => el.date === getDate(currentDate)
-    );
-
-    if (
-      !date.isSame(current, 'month') ||
-      (!workDays[getDayWeeks(getDate(date))] &&
-        !freeSlotsForCurrentDay[0]?.freeSlots) ||
-      date.isBefore(today)
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  };
-
   return (
     <AntdCalendar
       fullCellRender={(date, info) => {
         const today = getDate(info.today) === getDate(date);
         const isCurrent = getDate(date) === getDate(currentDate);
         const outMonth = !isSameDate(date, currentDate, 'month');
-        const isFreeSlots = freeSlots?.find(
-          (value) => value.date === getDate(date)
-        )?.isFree;
-        const isWorkDay = !disabledDate(date);
-        const isSelectSlots = selectedDay?.date === getDate(date);
+        const isSelectSlots = selectedDay === getDate(date);
 
         return (
           <Day
@@ -91,22 +52,17 @@ export const Calendar: React.FC<Props> = ({
             date={date}
             today={today}
             outMonth={outMonth}
-            freeSlots={isFreeSlots}
-            isWorkDay={isWorkDay}
             isSelectSlot={isSelectSlots}
           />
         );
       }}
-      disabledDate={disabledDate}
       value={currentDate}
       fullscreen={false}
       onSelect={(value) => onSelect(toShortDate(value.toString()))}
       headerRender={() => (
-        <>
-          <div className={styles.header}>
-            <p>{currentMonthYear}</p>
-          </div>
-        </>
+        <div className={styles.header}>
+          <p>{currentMonthYear}</p>
+        </div>
       )}
       locale={{
         lang: {

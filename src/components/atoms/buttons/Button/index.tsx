@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 type Props = {
   type: 'button' | 'submit';
-  variant: 'primary';
+  variant: 'primary' | 'primarySmall';
   label: MsgProps;
   onClick?: () => void;
   disabled?: boolean;
@@ -15,6 +15,7 @@ type Props = {
 
 const variantToClassName: Record<Props['variant'], string> = {
   primary: styles.primary,
+  primarySmall: classNames(styles.primary, styles.primarySmall),
 };
 
 export const Button: React.FC<Props> = ({ variant, label, ...props }) => (

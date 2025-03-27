@@ -9,6 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2022-04-19T00:00:00.000Z\n"
 
 msgctxt "base"
+msgid "base.buttons.currentDate"
+msgstr "Current Date"
+
+msgctxt "base"
 msgid "base.buttons.save"
 msgstr "Save"
 
@@ -31,6 +35,18 @@ msgstr "This is not the page you’re looking for :("
 msgctxt "base"
 msgid "components.routes.pages.Error404.title"
 msgstr "404 Not found"
+
+msgctxt "base"
+msgid "components.routes.pages.Main.noMeetings"
+msgstr "There are no meetings scheduled for this day."
+
+msgctxt "base"
+msgid "components.routes.pages.Main.oneMeeting"
+msgstr "A meeting is scheduled for this day at the time:"
+
+msgctxt "base"
+msgid "components.routes.pages.Main.severalMeetings"
+msgstr "On this day, meetings are scheduled for:"
 
 msgctxt "base"
 msgid "components.routes.pages.Main.title"

@@ -2,6 +2,25 @@
   min-height: var(--CALENDAR_MIN_HEIGHT);
 }
 
+.buttonBlock {
+  width: var(--SIZE_160);
+  margin-bottom: var(--MARGIN_10);
+}
+
 .pickerBlock {
   min-width: var(--SIZE_160);
+}
+
+.messagesBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: var(--MARGIN_30);
+  gap: var(--GAP_4);
+}
+
+.infoMessage {
+  text-align: start;
+  margin: 0;
 }

@@ -2,6 +2,8 @@
 // If you want to change the content of this file, you need to edit
 // file '/dictionaries/en.po' and run '.po' extractor
 export const base = {
+  'base.buttons.currentDate': 'Current Date',
+
   'base.buttons.save': 'Save',
 
   'components.atoms.Calendar.month': 'Month',
@@ -12,7 +14,17 @@ export const base = {
   'components.routes.pages.Error404.body':
     'This is not the page you’re looking for :(',
   'components.routes.pages.Error404.title': '404 Not found',
+  'components.routes.pages.Main.noMeetings':
+    'There are no meetings scheduled for this day.',
+  'components.routes.pages.Main.oneMeeting':
+    'A meeting is scheduled for this day at the time:',
+  'components.routes.pages.Main.severalMeetings':
+    'On this day, meetings are scheduled for:',
   'components.routes.pages.Main.title': 'Main',
+  'components.routes.pages.User.notFound': 'User not found',
+  'components.routes.pages.User.title': 'Main Page',
+
+  'components.templates.WithHeader.goBack': 'Go back',
 
   'constants.ui.months.april': 'April',
   'constants.ui.months.august': 'August',
@@ -26,11 +38,6 @@ export const base = {
   'constants.ui.months.november': 'November',
   'constants.ui.months.october': 'October',
   'constants.ui.months.september': 'September',
-
-  'components.routes.pages.User.notFound': 'User not found',
-  'components.routes.pages.User.title': 'Main Page',
-
-  'components.templates.WithHeader.goBack': 'Go back',
 
   'constants.ui.monthsShort.april': 'Apr',
   'constants.ui.monthsShort.august': 'Aug',

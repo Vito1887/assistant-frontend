@@ -42,8 +42,6 @@ export const Day: React.FC<Props> = ({
       className={classNames(styles.container, styleBody)}
     >
       <p className={styles.dayTitle}>{day}</p>
-
-      {isSelectSlot && <div className={styles.dot}></div>}
     </Box>
   );
 };

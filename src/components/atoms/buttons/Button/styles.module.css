@@ -29,6 +29,11 @@
   cursor: pointer;
 }
 
+.primarySmall {
+  height: var(--SIZE_40);
+  box-sizing: border-box;
+}
+
 .disabled {
   opacity: var(--OPACITY_05);
 }

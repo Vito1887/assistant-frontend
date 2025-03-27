@@ -1,0 +1,26 @@
+.wrapper {
+  width: max-content;
+  min-width: var(--SIZE_68);
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--PADDING_2) var(--PADDING_10);
+  border-radius: var(--RADIUS_20);
+  background-color: var(--COLOR_SUCCESS_BACKGROUND);
+  border: 0 transparent;
+}
+
+.pointerCursor {
+  cursor: pointer;
+}
+
+.positive {
+  margin: 0;
+  color: var(--COLOR_POSITIVE_INFO);
+}
+
+.negative {
+  margin: 0;
+  color: var(--COLOR_NEGATIVE_INFO);
+}
