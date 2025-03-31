@@ -76,10 +76,21 @@ const Main: React.FC = () => {
 
   const currentInformationalMessage = INFORMATIONAL_MESSAGE[currentInfo];
 
+  const test = () => Telegram.WebApp.sendData('Test');
+
   return (
     <Page template="entry">
       <div className={styles.calendarBlock}>
         <Calendar selectedDay={date} onSelect={setDate} />
+      </div>
+
+      <div className={styles.buttonBlock}>
+        <Button
+          type="button"
+          variant="primary"
+          label={{ id: 'base.buttons.save' }}
+          onClick={test}
+        />
       </div>
 
       <div className={styles.buttonBlock}>
