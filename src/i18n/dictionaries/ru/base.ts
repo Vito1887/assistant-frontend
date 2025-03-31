@@ -6,6 +6,8 @@ export const base = {
 
   'base.buttons.save': 'Сохранить',
 
+  'base.buttons.showVisits': 'Показать визиты',
+
   'components.atoms.Calendar.month': 'Месяц',
   'components.atoms.Calendar.year': 'Год',
 

@@ -17,6 +17,10 @@ msgid "base.buttons.save"
 msgstr "Save"
 
 msgctxt "base"
+msgid "base.buttons.showVisits"
+msgstr "Show visits"
+
+msgctxt "base"
 msgid "components.atoms.Calendar.month"
 msgstr "Month"
 
