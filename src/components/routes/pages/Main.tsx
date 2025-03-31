@@ -73,11 +73,12 @@ const Main: React.FC = () => {
 
   // const currentInformationalMessage = INFORMATIONAL_MESSAGE[currentInfo];
 
-  const getCurrentAppointmentInfo = (date?: string) => ({
-    type: 'app_command',
-    command: 'get appointment',
-    date,
-  });
+  const getCurrentAppointmentInfo = (date?: string) =>
+    ({
+      type: 'app_command',
+      command: 'get appointment',
+      date,
+    }).toString();
 
   const currentAppointmentInfo = getCurrentAppointmentInfo(date);
 
