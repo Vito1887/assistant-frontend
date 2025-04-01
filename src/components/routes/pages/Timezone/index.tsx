@@ -20,9 +20,17 @@ const Timezone: React.FC = () => {
     Telegram.WebApp.sendData(currentTimezoneInfo);
 
   useEffect(() => {
-    if (currentTimezone) {
-      sendAppointmentData();
-    }
+    const timeout = setTimeout(() => {
+      if (currentTimezone) {
+        sendAppointmentData();
+      }
+    }, 1500);
+
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    };
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTimezone]);
