@@ -30,7 +30,23 @@ msgstr "Year"
 
 msgctxt "base"
 msgid "components.organisms.Page.title"
-msgstr "Main"
+msgstr "Calendar"
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.noMeetings"
+msgstr "There are no meetings scheduled for this day."
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.oneMeeting"
+msgstr "A meeting is scheduled for this day at the time:"
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.severalMeetings"
+msgstr "On this day, meetings are scheduled for:"
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.title"
+msgstr "Calendar"
 
 msgctxt "base"
 msgid "components.routes.pages.Error404.body"
@@ -41,20 +57,12 @@ msgid "components.routes.pages.Error404.title"
 msgstr "404 Not found"
 
 msgctxt "base"
-msgid "components.routes.pages.Main.noMeetings"
-msgstr "There are no meetings scheduled for this day."
+msgid "components.routes.pages.Timezone.timezoneDefinition"
+msgstr "Determining current time zone..."
 
 msgctxt "base"
-msgid "components.routes.pages.Main.oneMeeting"
-msgstr "A meeting is scheduled for this day at the time:"
-
-msgctxt "base"
-msgid "components.routes.pages.Main.severalMeetings"
-msgstr "On this day, meetings are scheduled for:"
-
-msgctxt "base"
-msgid "components.routes.pages.Main.title"
-msgstr "Main"
+msgid "components.routes.pages.Timezone.title"
+msgstr "Timezone"
 
 msgctxt "base"
 msgid "components.routes.pages.User.notFound"
@@ -62,7 +70,7 @@ msgstr "User not found"
 
 msgctxt "base"
 msgid "components.routes.pages.User.title"
-msgstr "Main Page"
+msgstr "Calendar Page"
 
 msgctxt "base"
 msgid "components.templates.WithHeader.goBack"

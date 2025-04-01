@@ -1,5 +1,7 @@
 export enum PAGES {
-  MAIN = '/calendar',
+  CALENDAR = '/calendar',
+  TIMEZONE = '/timezone',
+
   ERROR_404 = '/error',
 
   // USER = '/:orderUID',

@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoMessage {
+  text-align: center;
+  margin: 0;
+  padding-top: var(--PADDING_10);
+  font-weight: var(--WEIGHT_NORMAL);
+}

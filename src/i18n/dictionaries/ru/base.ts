@@ -13,16 +13,19 @@ export const base = {
 
   'components.organisms.Page.title': 'Главная',
 
+  'components.routes.pages.Calendar.noMeetings':
+    'На данный день встреч не назначено.',
+  'components.routes.pages.Calendar.oneMeeting':
+    'В этот день назначена встреча на время:',
+  'components.routes.pages.Calendar.severalMeetings':
+    'В этот день назначены встречи на время:',
+  'components.routes.pages.Timezone.timezoneDefinition':
+    'Выполняется определение текущего часового пояса...',
+  'components.routes.pages.Calendar.title': 'Календарь',
   'components.routes.pages.Error404.body':
     'Это не та страница, которую вы ищете :(',
   'components.routes.pages.Error404.title': '404 Не найдено',
-  'components.routes.pages.Main.noMeetings':
-    'На данный день встреч не назначено.',
-  'components.routes.pages.Main.oneMeeting':
-    'В этот день назначена встреча на время:',
-  'components.routes.pages.Main.severalMeetings':
-    'В этот день назначены встречи на время:',
-  'components.routes.pages.Main.title': 'Главная',
+  'components.routes.pages.Timezone.title': 'Часовой пояс',
   'components.routes.pages.User.notFound': 'Пользователь не найден',
   'components.routes.pages.User.title': 'Главная страница',
 

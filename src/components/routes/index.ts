@@ -6,7 +6,7 @@ import { DictionaryKey } from 'src/i18n';
 export type AuthMode = 'authorized' | 'unauthorized';
 
 export const pagesRedirect: Record<AuthMode, PAGES> = {
-  authorized: PAGES.MAIN,
+  authorized: PAGES.CALENDAR,
   unauthorized: PAGES.ERROR_404,
 };
 
@@ -18,11 +18,17 @@ export type PageRoute = {
 };
 
 export const pages: Record<PAGES, PageRoute> = {
-  [PAGES.MAIN]: {
+  [PAGES.CALENDAR]: {
     access: 'all',
-    title: 'components.routes.pages.Main.title',
-    component: lazy(() => import('src/components/routes/pages/Main')),
+    title: 'components.routes.pages.Calendar.title',
+    component: lazy(() => import('src/components/routes/pages/Calendar/index')),
   },
+  [PAGES.TIMEZONE]: {
+    access: 'all',
+    title: 'components.routes.pages.Timezone.title',
+    component: lazy(() => import('src/components/routes/pages/Timezone')),
+  },
+
   // [PAGES.USER]: {
   //   access: 'all',
   //   title: 'components.routes.pages.User.title',

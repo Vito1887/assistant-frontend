@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 import { Button } from 'src/components/atoms/buttons/Button';
-import { Calendar } from 'src/components/molecules/Calendar';
+import { Calendar as AntdCalendar } from 'src/components/molecules/Calendar';
 import { MonthPicker } from 'src/components/molecules/MonthPicker';
 import { Page } from 'src/components/organisms/Page';
 import { getDate } from 'src/utils/dates';
 
 import styles from './styles.module.css';
 
-const Main: React.FC = () => {
+const Calendar: React.FC = () => {
   const currentDate = getDate();
 
   const [date, setDate] = useState(currentDate);
@@ -46,9 +46,9 @@ const Main: React.FC = () => {
   // const selectedDayVisitsTime = selectedDayVisits?.map((el) => el.time);
   //
   // const INFORMATIONAL_MESSAGE: Record<string, MsgProps> = {
-  //   noMeetings: { id: 'components.routes.pages.Main.noMeetings' },
-  //   oneMeeting: { id: 'components.routes.pages.Main.oneMeeting' },
-  //   severalMeetings: { id: 'components.routes.pages.Main.severalMeetings' },
+  //   noMeetings: { id: 'components.routes.pages.Calendar.noMeetings' },
+  //   oneMeeting: { id: 'components.routes.pages.Calendar.oneMeeting' },
+  //   severalMeetings: { id: 'components.routes.pages.Calendar.severalMeetings' },
   // };
 
   // const getCurrentInfo = () => {
@@ -74,11 +74,7 @@ const Main: React.FC = () => {
   // const currentInformationalMessage = INFORMATIONAL_MESSAGE[currentInfo];
 
   const getCurrentAppointmentInfo = (date?: string) =>
-    JSON.stringify({
-      type: 'app_command',
-      command: 'get appointment',
-      date,
-    });
+    JSON.stringify({ command: 'get appointment', date });
 
   const currentAppointmentInfo = getCurrentAppointmentInfo(date);
 
@@ -90,7 +86,7 @@ const Main: React.FC = () => {
   return (
     <Page template="entry">
       <div className={styles.calendarBlock}>
-        <Calendar selectedDay={date} onSelect={setDate} />
+        <AntdCalendar selectedDay={date} onSelect={setDate} />
       </div>
 
       <div className={styles.buttonBlock}>
@@ -126,4 +122,4 @@ const Main: React.FC = () => {
   );
 };
 
-export default Main;
+export default Calendar;

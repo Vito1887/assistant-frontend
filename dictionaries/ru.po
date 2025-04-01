@@ -33,6 +33,22 @@ msgid "components.organisms.Page.title"
 msgstr "Главная"
 
 msgctxt "base"
+msgid "components.routes.pages.Calendar.noMeetings"
+msgstr "На данный день встреч не назначено."
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.oneMeeting"
+msgstr "В этот день назначена встреча на время:"
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.severalMeetings"
+msgstr "В этот день назначены встречи на время:"
+
+msgctxt "base"
+msgid "components.routes.pages.Calendar.title"
+msgstr "Календарь"
+
+msgctxt "base"
 msgid "components.routes.pages.Error404.body"
 msgstr "Это не та страница, которую вы ищете :("
 
@@ -41,20 +57,12 @@ msgid "components.routes.pages.Error404.title"
 msgstr "404 Не найдено"
 
 msgctxt "base"
-msgid "components.routes.pages.Main.noMeetings"
-msgstr "На данный день встреч не назначено."
+msgid "components.routes.pages.Timezone.timezoneDefinition"
+msgstr "Выполняется определение текущего часового пояса..."
 
 msgctxt "base"
-msgid "components.routes.pages.Main.oneMeeting"
-msgstr "В этот день назначена встреча на время:"
-
-msgctxt "base"
-msgid "components.routes.pages.Main.severalMeetings"
-msgstr "В этот день назначены встречи на время:"
-
-msgctxt "base"
-msgid "components.routes.pages.Main.title"
-msgstr "Главная"
+msgid "components.routes.pages.Timezone.title"
+msgstr "Часовой пояс"
 
 msgctxt "base"
 msgid "components.routes.pages.User.notFound"

@@ -28,7 +28,7 @@ export const WithDefaultTitle: StoryObj<ComponentType> = {
 
 export const WithDefaultTitleAndNavigation: StoryObj<ComponentType> = {
   render: () => (
-    <Component template="withHeader" title back={{ scheme: PAGES.MAIN }}>
+    <Component template="withHeader" title back={{ scheme: PAGES.CALENDAR }}>
       text
     </Component>
   ),

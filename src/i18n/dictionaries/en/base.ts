@@ -11,20 +11,23 @@ export const base = {
   'components.atoms.Calendar.month': 'Month',
   'components.atoms.Calendar.year': 'Year',
 
-  'components.organisms.Page.title': 'Main',
+  'components.organisms.Page.title': 'Calendar',
 
+  'components.routes.pages.Calendar.noMeetings':
+    'There are no meetings scheduled for this day.',
+  'components.routes.pages.Calendar.oneMeeting':
+    'A meeting is scheduled for this day at the time:',
+  'components.routes.pages.Calendar.severalMeetings':
+    'On this day, meetings are scheduled for:',
+  'components.routes.pages.Calendar.title': 'Calendar',
   'components.routes.pages.Error404.body':
     'This is not the page you’re looking for :(',
   'components.routes.pages.Error404.title': '404 Not found',
-  'components.routes.pages.Main.noMeetings':
-    'There are no meetings scheduled for this day.',
-  'components.routes.pages.Main.oneMeeting':
-    'A meeting is scheduled for this day at the time:',
-  'components.routes.pages.Main.severalMeetings':
-    'On this day, meetings are scheduled for:',
-  'components.routes.pages.Main.title': 'Main',
+  'components.routes.pages.Timezone.timezoneDefinition':
+    'Determining current time zone...',
+  'components.routes.pages.Timezone.title': 'Timezone',
   'components.routes.pages.User.notFound': 'User not found',
-  'components.routes.pages.User.title': 'Main Page',
+  'components.routes.pages.User.title': 'Calendar Page',
 
   'components.templates.WithHeader.goBack': 'Go back',
 
