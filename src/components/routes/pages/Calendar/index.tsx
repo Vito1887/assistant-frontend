@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { useState } from 'react';
 
 import { Button } from 'src/components/atoms/buttons/Button';
@@ -5,6 +6,7 @@ import { Calendar as AntdCalendar } from 'src/components/molecules/Calendar';
 import { MonthPicker } from 'src/components/molecules/MonthPicker';
 import { Page } from 'src/components/organisms/Page';
 import { getDate } from 'src/utils/dates';
+import { MAX_DEVICE_WIDTH, SCREEN_WIDTH } from 'src/utils/theme';
 
 import styles from './styles.module.css';
 
@@ -12,6 +14,10 @@ const Calendar: React.FC = () => {
   const currentDate = getDate();
 
   const [date, setDate] = useState(currentDate);
+
+  const currentWidth = SCREEN_WIDTH();
+
+  const isDeviceWidth = currentWidth <= MAX_DEVICE_WIDTH;
 
   // TODO: Заменить настоящими:
   // const visits: Visit[] = [
@@ -89,7 +95,11 @@ const Calendar: React.FC = () => {
         <AntdCalendar selectedDay={date} onSelect={setDate} />
       </div>
 
-      <div className={styles.buttonBlock}>
+      <div
+        className={classNames(styles.buttonBlock, {
+          [styles.desktopBlock]: !isDeviceWidth,
+        })}
+      >
         <Button
           type="button"
           variant="primary"
@@ -98,7 +108,11 @@ const Calendar: React.FC = () => {
         />
       </div>
 
-      <div className={styles.buttonBlock}>
+      <div
+        className={classNames(styles.buttonBlock, {
+          [styles.desktopBlock]: !isDeviceWidth,
+        })}
+      >
         <Button
           type="button"
           variant="primarySmall"
@@ -107,7 +121,11 @@ const Calendar: React.FC = () => {
         />
       </div>
 
-      <div className={styles.pickerBlock}>
+      <div
+        className={classNames(styles.pickerBlock, {
+          [styles.desktopBlock]: !isDeviceWidth,
+        })}
+      >
         <MonthPicker date={date} setDate={setDate} />
       </div>
 

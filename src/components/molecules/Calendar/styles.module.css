@@ -1,6 +1,7 @@
 .header {
+  text-align: center;
   margin-bottom: var(--MARGIN_20);
-  font-weight: var(--WEIGHT_NORMAL);
+  font-weight: var(--WEIGHT_600);
   color: var(--COLOR_PRIMARY);
 }
 

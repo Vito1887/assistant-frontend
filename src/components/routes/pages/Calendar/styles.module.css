@@ -3,12 +3,22 @@
 }
 
 .buttonBlock {
-  width: var(--SIZE_160);
+  width: 100%;
   margin-bottom: var(--MARGIN_10);
+  padding-left: var(--PADDING_10);
+  padding-right: var(--PADDING_10);
 }
 
 .pickerBlock {
+  width: 100%;
   min-width: var(--SIZE_160);
+  padding-left: var(--PADDING_10);
+  padding-right: var(--PADDING_10);
+}
+
+.desktopBlock {
+  padding-left: var(--PADDING_16);
+  padding-right: var(--PADDING_16);
 }
 
 .messagesBlock {

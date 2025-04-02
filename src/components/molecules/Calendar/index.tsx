@@ -3,7 +3,7 @@ import React from 'react';
 import { useIntl } from 'react-intl';
 
 import { Day } from 'src/components/atoms/Day';
-import { monthsShort, weekdaysShort } from 'src/constants/ui';
+import { months, weekdaysShort } from 'src/constants/ui';
 import { msg } from 'src/i18n/Msg';
 import {
   DateFormats,
@@ -29,11 +29,11 @@ export const Calendar: React.FC<Props> = ({ selectedDay, onSelect }) => {
     msg(intl, { id: weekdaysShort[index].day })
   );
 
-  const shortMonths = monthsShort.map((el) => msg(intl, { id: el }));
+  const fullMonths = months.map((el) => msg(intl, { id: el }));
 
   const currentMonthYear =
     msg(intl, {
-      id: monthsShort[Number(getDate(currentDate, DateFormats.M)) - 1],
+      id: months[Number(getDate(currentDate, DateFormats.M)) - 1],
     }) +
     '\n' +
     getDate(currentDate, DateFormats.YYYY);
@@ -96,7 +96,7 @@ export const Calendar: React.FC<Props> = ({ selectedDay, onSelect }) => {
           previousCentury: 'Last century',
           nextCentury: 'Next century',
           shortWeekDays: shortWeekdays,
-          shortMonths: shortMonths,
+          shortMonths: fullMonths,
         },
         timePickerLocale: {
           placeholder: 'Select time',
