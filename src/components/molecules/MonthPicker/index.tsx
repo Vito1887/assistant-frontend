@@ -15,12 +15,14 @@ type Props = {
 };
 
 export const MonthPicker: React.FC<Props> = ({ date, setDate }) => {
+  const regex = /.{2}$/;
+
   const monthUp = () => {
-    setDate(addDate(date, 1, 'month'));
+    setDate(addDate(date, 1, 'month').replace(regex, '01'));
   };
 
   const monthDown = () => {
-    setDate(subtractDate(date, 1, 'month'));
+    setDate(subtractDate(date, 1, 'month').replace(regex, '01'));
   };
 
   const month = Number(getDate(date, DateFormats.M));

@@ -102,7 +102,7 @@ const Calendar: React.FC = () => {
       >
         <Button
           type="button"
-          variant="primary"
+          variant="primarySmall"
           label={{ id: 'base.buttons.showVisits' }}
           onClick={sendAppointmentData}
         />

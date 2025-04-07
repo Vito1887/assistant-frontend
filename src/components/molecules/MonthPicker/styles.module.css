@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: var(--SIZE_60);
+  height: var(--SIZE_40);
   padding: var(--PADDING_10);
   background-color: var(--COLOR_SECONDARY_BG);
   border-radius: var(--SIZE_10);
