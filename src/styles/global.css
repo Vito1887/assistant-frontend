@@ -25,6 +25,25 @@ code {
 
 /* ------- TEXT STYLES ------- */
 
+.title {
+  font-size: var(--FONT_SIZE_TITLE);
+  line-height: var(--LINE_HEIGHT_30);
+  color: var(--COLOR_PRIMARY);
+}
+
+.pageTitle {
+  font-size: var(--FONT_SIZE_18);
+  line-height: var(--LINE_HEIGHT_22);
+  color: var(--COLOR_PRIMARY);
+}
+
+.subtitle {
+  font-size: var(--FONT_SIZE_SUB_TITLE);
+  line-height: var(--LINE_HEIGHT_24);
+  color: var(--COLOR_PRIMARY);
+  text-align: center;
+}
+
 .text {
   font-size: var(--FONT_SIZE_TEXT);
   line-height: var(--LINE_HEIGHT_20);
@@ -35,6 +54,18 @@ code {
   font-size: var(--FONT_SIZE_SUB_TEXT);
   line-height: var(--LINE_HEIGHT_16);
   color: var(--COLOR_PRIMARY);
+}
+
+.text-style-pale {
+  color: var(--COLOR_SUBTEXT);
+}
+
+.text-style-uppercase {
+  text-transform: uppercase;
+}
+
+.text-style-centered {
+  text-align: center;
 }
 
 .text-style-thick {

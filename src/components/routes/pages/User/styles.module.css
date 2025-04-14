@@ -1,13 +1,7 @@
-.header {
+.wrapper {
   width: 100%;
-  position: relative;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.descriptions {
   display: flex;
-  align-items: center;
+  flex: 1;
   flex-direction: column;
-  padding-bottom: var(--PADDING_4);
+  box-sizing: border-box;
 }

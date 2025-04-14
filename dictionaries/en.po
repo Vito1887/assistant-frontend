@@ -33,6 +33,62 @@ msgid "components.organisms.Page.title"
 msgstr "Calendar"
 
 msgctxt "base"
+msgid "components.organisms.forms.UserForm.address"
+msgstr "Address"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.city"
+msgstr "City"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.contactsBlock"
+msgstr "Contacts"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.locationBlock"
+msgstr "Location"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.mail"
+msgstr "E-mail"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.mainBlock"
+msgstr "Main"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.name"
+msgstr "Name"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.notes"
+msgstr "Notes"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.notesBlock"
+msgstr "About Me"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.phone"
+msgstr "Phone"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.specialization"
+msgstr "Specialization"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.surname"
+msgstr "Surname"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.telegram"
+msgstr "Telegram"
+
+msgctxt "base"
+msgid "components.organisms.forms.UserForm.vkontakte"
+msgstr "VKontakte"
+
+msgctxt "base"
 msgid "components.routes.pages.Calendar.noMeetings"
 msgstr "There are no meetings scheduled for this day."
 
@@ -70,7 +126,7 @@ msgstr "User not found"
 
 msgctxt "base"
 msgid "components.routes.pages.User.title"
-msgstr "Calendar Page"
+msgstr "User Profile"
 
 msgctxt "base"
 msgid "components.templates.WithHeader.goBack"
@@ -199,4 +255,20 @@ msgstr "Tue"
 msgctxt "base"
 msgid "constants.ui.weekdaysShort.wednesday"
 msgstr "Wed"
+
+msgctxt "events"
+msgid "events.error.name.invalid"
+msgstr "The name is not valid"
+
+msgctxt "events"
+msgid "events.error.name.required"
+msgstr "Please enter your name"
+
+msgctxt "events"
+msgid "events.error.phone.invalid"
+msgstr "Phone number is not valid"
+
+msgctxt "events"
+msgid "events.error.phone.required"
+msgstr "Please enter your phone number"
 

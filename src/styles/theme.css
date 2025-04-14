@@ -15,11 +15,16 @@
 
   --FONT_SIZE_SUB_TEXT: 12px;
   --FONT_SIZE_TEXT: 14px;
+  --FONT_SIZE_SUB_TITLE: 16px;
   --FONT_SIZE_18: 18px;
+  --FONT_SIZE_TITLE: 20px;
 
   --LINE_HEIGHT_14: 14px;
   --LINE_HEIGHT_16: 16px;
   --LINE_HEIGHT_20: 20px;
+  --LINE_HEIGHT_22: 22px;
+  --LINE_HEIGHT_24: 24px;
+  --LINE_HEIGHT_30: 30px;
 
   /* Surface */
   --COLOR_FOREGROUND: rgba(255, 255, 255, 1); /* #FFFFFF */
@@ -36,12 +41,15 @@
   --COLOR_NEGATIVE: rgba(253, 135, 110, 1); /* #FD876E */
   --COLOR_POSITIVE_INFO: rgba(75, 153, 99, 1); /* #4B9963 */
   --COLOR_NEGATIVE_INFO: rgba(239, 121, 96, 1); /* #EF7960 */
+  --COLOR_POSITIVE_DEFAULT: rgba(86, 173, 113, 1); /* #56AD71 */
 
   /* Buttons & Accent Colors */
   --COLOR_POSITIVE: rgba(86, 173, 113, 1); /* #56AD71 */
   --COLOR_POSITIVE_PRESSED: rgba(91, 188, 121, 1); /* #5BBC79 */
 
   /* Strokes */
+  --COLOR_STROKE_GENERAL: rgba(214, 220, 229, 1); /* #D6DCE5 */
+  --COLOR_STROKE_ACTIVE: rgba(176, 176, 215, 1); /* B0B0D7 */
   --COLOR_STROKE_LIGHT: rgba(237, 237, 237, 1); /* #EDEDED */
 
   /* Shadows */
@@ -62,6 +70,8 @@
   --SIZE_40: 40px;
   --SIZE_60: 60px;
   --SIZE_68: 68px;
+  --SIZE_90: 90px;
+  --SIZE_120: 120px;
   --SIZE_160: 160px;
   --SIZE_190: 190px;
 
@@ -75,6 +85,7 @@
 
   --MARGIN_4: 4px;
   --MARGIN_6: 6px;
+  --MARGIN_8: 8px;
   --MARGIN_10: 10px;
   --MARGIN_20: 20px;
   --MARGIN_30: 30px;
@@ -82,6 +93,7 @@
 
   --PADDING_2: 2px;
   --PADDING_4: 4px;
+  --PADDING_6: 6px;
   --PADDING_8: 8px;
   --PADDING_10: 10px;
   --PADDING_12: 12px;

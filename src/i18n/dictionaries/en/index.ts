@@ -2,5 +2,6 @@
 // If you want to change the content of this file, you need to edit
 // file '/dictionaries/en.po' and run '.po' extractor
 import { base } from './base';
+import { events } from './events';
 
-export const en = { ...base };
+export const en = { ...base, ...events };

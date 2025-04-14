@@ -13,6 +13,21 @@ export const base = {
 
   'components.organisms.Page.title': 'Calendar',
 
+  'components.organisms.forms.UserForm.address': 'Address',
+  'components.organisms.forms.UserForm.city': 'City',
+  'components.organisms.forms.UserForm.contactsBlock': 'Contacts',
+  'components.organisms.forms.UserForm.mainBlock': 'Main',
+  'components.organisms.forms.UserForm.locationBlock': 'Location',
+  'components.organisms.forms.UserForm.mail': 'E-mail',
+  'components.organisms.forms.UserForm.name': 'Name',
+  'components.organisms.forms.UserForm.notes': 'Notes',
+  'components.organisms.forms.UserForm.notesBlock': 'About Me',
+  'components.organisms.forms.UserForm.phone': 'Phone',
+  'components.organisms.forms.UserForm.specialization': 'Specialization',
+  'components.organisms.forms.UserForm.surname': 'Surname',
+  'components.organisms.forms.UserForm.telegram': 'Telegram',
+  'components.organisms.forms.UserForm.vkontakte': 'VKontakte',
+
   'components.routes.pages.Calendar.noMeetings':
     'There are no meetings scheduled for this day.',
   'components.routes.pages.Calendar.oneMeeting':
@@ -27,7 +42,7 @@ export const base = {
     'Determining current time zone...',
   'components.routes.pages.Timezone.title': 'Timezone',
   'components.routes.pages.User.notFound': 'User not found',
-  'components.routes.pages.User.title': 'Calendar Page',
+  'components.routes.pages.User.title': 'User Profile',
 
   'components.templates.WithHeader.goBack': 'Go back',
 

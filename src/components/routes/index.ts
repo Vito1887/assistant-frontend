@@ -18,6 +18,11 @@ export type PageRoute = {
 };
 
 export const pages: Record<PAGES, PageRoute> = {
+  [PAGES.USER]: {
+    access: 'all',
+    title: 'components.routes.pages.User.title',
+    component: lazy(() => import('src/components/routes/pages/User')),
+  },
   [PAGES.CALENDAR]: {
     access: 'all',
     title: 'components.routes.pages.Calendar.title',
@@ -28,12 +33,6 @@ export const pages: Record<PAGES, PageRoute> = {
     title: 'components.routes.pages.Timezone.title',
     component: lazy(() => import('src/components/routes/pages/Timezone')),
   },
-
-  // [PAGES.USER]: {
-  //   access: 'all',
-  //   title: 'components.routes.pages.User.title',
-  //   component: lazy(() => import('src/components/routes/pages/User')),
-  // },
 
   [PAGES.ERROR_404]: {
     access: 'all',

@@ -1,4 +1,5 @@
 import { en } from 'src/i18n/dictionaries/en';
+import { events } from 'src/i18n/dictionaries/en/events';
 import { ru } from 'src/i18n/dictionaries/ru';
 
 /**
@@ -23,3 +24,4 @@ export const defaultDictionary = locales[defaultLocale].dictionary;
 export type Locales = keyof typeof locales;
 export type Dictionary = typeof defaultDictionary;
 export type DictionaryKey = keyof Dictionary;
+export type Events = keyof typeof events;

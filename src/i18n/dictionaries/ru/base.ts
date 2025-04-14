@@ -13,21 +13,36 @@ export const base = {
 
   'components.organisms.Page.title': 'Главная',
 
+  'components.organisms.forms.UserForm.address': 'Адрес',
+  'components.organisms.forms.UserForm.city': 'Город',
+  'components.organisms.forms.UserForm.mainBlock': 'Основное',
+  'components.organisms.forms.UserForm.contactsBlock': 'Контакты',
+  'components.organisms.forms.UserForm.locationBlock': 'Местоположение',
+  'components.organisms.forms.UserForm.mail': 'Почта',
+  'components.organisms.forms.UserForm.name': 'Имя',
+  'components.organisms.forms.UserForm.notes': 'Заметки',
+  'components.organisms.forms.UserForm.notesBlock': 'О себе',
+  'components.organisms.forms.UserForm.phone': 'Телефон',
+  'components.organisms.forms.UserForm.specialization': 'Специализация',
+  'components.organisms.forms.UserForm.surname': 'Фамилия',
+  'components.organisms.forms.UserForm.telegram': 'Телеграм',
+  'components.organisms.forms.UserForm.vkontakte': 'ВКонтакте',
+
   'components.routes.pages.Calendar.noMeetings':
     'На данный день встреч не назначено.',
   'components.routes.pages.Calendar.oneMeeting':
     'В этот день назначена встреча на время:',
   'components.routes.pages.Calendar.severalMeetings':
     'В этот день назначены встречи на время:',
-  'components.routes.pages.Timezone.timezoneDefinition':
-    'Выполняется определение текущего часового пояса...',
   'components.routes.pages.Calendar.title': 'Календарь',
   'components.routes.pages.Error404.body':
     'Это не та страница, которую вы ищете :(',
   'components.routes.pages.Error404.title': '404 Не найдено',
+  'components.routes.pages.Timezone.timezoneDefinition':
+    'Выполняется определение текущего часового пояса...',
   'components.routes.pages.Timezone.title': 'Часовой пояс',
   'components.routes.pages.User.notFound': 'Пользователь не найден',
-  'components.routes.pages.User.title': 'Главная страница',
+  'components.routes.pages.User.title': 'Профиль пользователя',
 
   'components.templates.WithHeader.goBack': 'Вернуться на предыдущий экран',
 

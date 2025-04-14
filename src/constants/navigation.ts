@@ -1,10 +1,9 @@
 export enum PAGES {
+  USER = '/user',
   CALENDAR = '/calendar',
   TIMEZONE = '/timezone',
 
   ERROR_404 = '/error',
-
-  // USER = '/:orderUID',
 }
 
 export const routes = Object.values(PAGES)

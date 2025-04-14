@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: auto;
+  min-height: var(--SIZE_120);
+  position: relative;
+  padding: var(--PADDING_20);
+  border-radius: var(--RADIUS_10);
+  border: var(--SIZE_BORDER) solid var(--COLOR_STROKE_GENERAL);
+  font-family: var(--FONT_DEFAULT);
+  font-size: var(--FONT_SIZE_TEXT);
+  font-weight: var(--WEIGHT_NORMAL);
+  line-height: var(--LINE_HEIGHT_20);
+  color: var(--COLOR_PRIMARY);
+  background-color: var(--COLOR_FOREGROUND);
+}
+
+.input:disabled {
+  border: var(--SIZE_BORDER) solid var(--COLOR_SHADOW_GENERAL);
+  background-color: var(--COLOR_SHADOW_GENERAL);
+  z-index: 0;
+}
+
+.input:focus {
+  outline: none;
+  border: var(--SIZE_BORDER) solid var(--COLOR_STROKE_ACTIVE);
+  z-index: 0;
+}
+
+.underTextInput {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.label {
+  position: absolute;
+  top: 2px; /* pixel perfect */
+  left: 20px; /* pixel perfect */
+  font-size: var(--FONT_SIZE_TEXT);
+  color: var(--COLOR_SUBTEXT);
+  transform: translateY(12px);
+  z-index: +1;
+}
+
+.labelOnTouch {
+  position: absolute;
+  top: 5px; /* pixel perfect */
+  left: 21px; /* pixel perfect */
+  font-family: var(--FONT_DEFAULT);
+  font-size: var(--FONT_SIZE_SUB_TEXT);
+  line-height: var(--LINE_HEIGHT_16);
+  color: var(--COLOR_SUBTEXT);
+  transition: var(--TRANSITION_03);
+  z-index: +1;
+}
+
+.cross {
+  position: absolute;
+  top: 10px; /* pixel perfect */
+  right: 16px; /* pixel perfect */
+  z-index: +1;
+}
+
+.error {
+  width: 100%;
+}
+
+.errorIndent {
+  bottom: 24px; /* pixel perfect */
+}

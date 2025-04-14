@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--COLOR_FOREGROUND);
+}
+
+.text {
+  margin: 0 auto;
+  padding: var(--PADDING_20) 0 var(--PADDING_2);
+}
+
+.inputWrapper {
+  margin-bottom: var(--MARGIN_20);
+}
+
+.menuText {
+  margin: 0;
+  padding-bottom: var(--PADDING_10);
+}
+
+.mainContent {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: var(--MARGIN_8);
+}
+
+.notifications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--MARGIN_30) 0;
+  padding: var(--PADDING_10) 0;
+  position: relative;
+}
+
+.confirmButton {
+  width: 100%;
+  margin-top: var(--MARGIN_40);
+}
