@@ -3,6 +3,7 @@
   src:
     local('SanFrancisco'),
     url(src/assets/fonts/SFUIDisplay-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 body {
