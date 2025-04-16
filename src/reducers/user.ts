@@ -40,7 +40,7 @@ const reducer = reducerWithInitialState<State>(initialState)
       specialization: payload.specialization,
       phone: payload.phone,
       mail: payload.mail,
-      telegram: payload.mail,
+      telegram: payload.telegram,
       vkontakte: payload.vkontakte,
       city: payload.city,
       address: payload.address,
