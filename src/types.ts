@@ -21,10 +21,17 @@ export type IconBaseProps = {
 };
 
 export type User = {
-  userId: ID;
-  name: string;
-  phone: string;
-  email: Email;
+  userId?: ID;
+  name?: string;
+  surname?: string;
+  specialization?: string;
+  phone?: string;
+  mail?: Email;
+  telegram?: string;
+  vkontakte?: string;
+  city?: string;
+  address?: string;
+  notes?: string;
 };
 
 export type Visit = {
@@ -63,6 +70,21 @@ export namespace Actions {
   }
 
   export namespace ui {
+    export namespace userInfo {
+      export type set = {
+        name?: string;
+        surname?: string;
+        specialization?: string;
+        phone?: string;
+        mail?: Email;
+        telegram?: string;
+        vkontakte?: string;
+        city?: string;
+        address?: string;
+        notes?: string;
+      };
+    }
+
     export namespace geoInfo {
       export type set = {
         info: GeoInfo;

@@ -10,7 +10,11 @@ type Props = {
 };
 
 export const IntlProvider: React.FC<Props> = ({ children }) => {
-  const { locale } = useSelector((state: ReduxState) => state.user.geoInfo);
+  const { locale } = useSelector(
+    (state: ReduxState) => state.user.geoInfo || { locale: defaultLocale },
+    // No rerender
+    (left, right) => JSON.stringify(left) === JSON.stringify(right)
+  );
 
   return (
     <Provider

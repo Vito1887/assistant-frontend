@@ -2,6 +2,10 @@ import { Modals } from 'src/components/routes/modals';
 import { Actions } from 'src/types';
 import { actionCreator } from 'src/utils/factories';
 
+export const userInfo = {
+  set: actionCreator<Actions.ui.userInfo.set>('USER_INFO_SET'),
+};
+
 export const geoInfo = {
   set: actionCreator<Actions.ui.geoInfo.set>('GEO_INFO_SET'),
 };

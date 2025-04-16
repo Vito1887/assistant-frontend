@@ -30,6 +30,22 @@ const reducer = reducerWithInitialState<State>(initialState)
       ...state,
       geoInfo: info,
     })
-  );
+  )
+  .case(actions.ui.userInfo.set, (state, payload) => ({
+    ...state,
+    data: {
+      ...state,
+      name: payload.name,
+      surname: payload.surname,
+      specialization: payload.specialization,
+      phone: payload.phone,
+      mail: payload.mail,
+      telegram: payload.mail,
+      vkontakte: payload.vkontakte,
+      city: payload.city,
+      address: payload.address,
+      notes: payload.address,
+    },
+  }));
 
 export const user = { initialState, reducer };

@@ -1,16 +1,42 @@
 import classNames from 'classnames';
 import React from 'react';
+import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 
+import { actions } from 'src/actions';
 import { Button } from 'src/components/atoms/buttons/Button';
 import { Input } from 'src/components/molecules/Input';
 import { TextArea } from 'src/components/molecules/TextArea';
 import { useFormik } from 'src/hooks/useFormik';
 import { Msg } from 'src/i18n/Msg';
+import { ReduxState } from 'src/reducers';
 import { validators } from 'src/utils/validation';
 
 import styles from './styles.module.css';
 
 export const UserForm: React.FC = () => {
+  const dispatch = useDispatch();
+
+  const { user } = useSelector(
+    (state: ReduxState) => ({
+      user: state.user?.data,
+    }),
+    // No rerender
+    shallowEqual
+  );
+
+  const {
+    name,
+    surname,
+    specialization,
+    phone,
+    mail,
+    telegram,
+    vkontakte,
+    city,
+    address,
+    notes,
+  } = user || {};
+
   const getUserInfo = (
     name?: string,
     surname?: string,
@@ -44,34 +70,45 @@ export const UserForm: React.FC = () => {
     // @ts-ignore
     Telegram.WebApp.sendData(userInfo);
 
-  //////////////////////////////////// TODO: For Tests
-
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const tgData = Telegram.WebApp.initData;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const user = Telegram.WebApp.initDataUnsafe.user;
-
-  console.log(tgData, user);
-
-  const testName = user?.name || 'nnnn';
-  const testSurname = user?.surname || 'uuuu';
-
-  /////////////////////////////////////
+  const updateUserInfo = (
+    name?: string,
+    surname?: string,
+    specialization?: string,
+    phone?: string,
+    mail?: string,
+    telegram?: string,
+    vkontakte?: string,
+    city?: string,
+    address?: string,
+    notes?: string
+  ) =>
+    dispatch(
+      actions.ui.userInfo.set({
+        name,
+        surname,
+        specialization,
+        phone,
+        mail,
+        telegram,
+        vkontakte,
+        city,
+        address,
+        notes,
+      })
+    );
 
   const { handleSubmit, handleChange, values, errors } = useFormik({
     initialValues: {
-      name: '',
-      surname: '',
-      specialization: '',
-      phone: '',
-      mail: '',
-      telegram: '',
-      vkontakte: '',
-      city: '',
-      address: '',
-      notes: '',
+      name: name || '',
+      surname: surname || '',
+      specialization: specialization || '',
+      phone: phone || '',
+      mail: mail || '',
+      telegram: telegram || '',
+      vkontakte: vkontakte || '',
+      city: city || '',
+      address: address || '',
+      notes: notes || '',
     },
 
     validationSchema: validators.user,
@@ -87,7 +124,7 @@ export const UserForm: React.FC = () => {
       city,
       address,
       notes,
-    }) =>
+    }) => {
       sendUserData(
         getUserInfo(
           name,
@@ -101,17 +138,26 @@ export const UserForm: React.FC = () => {
           address,
           notes
         )
-      ),
+      );
+      updateUserInfo(
+        name,
+        surname,
+        specialization,
+        phone,
+        mail,
+        telegram,
+        vkontakte,
+        city,
+        address,
+        notes
+      );
+    },
   });
 
   // const onChangeSwitch = () => setNotification(!notification);
 
   return (
     <div className={styles.wrapper}>
-      <>
-        {testName}
-        {testSurname}
-      </>
       <div className={styles.mainContent}>
         <p
           className={classNames(
