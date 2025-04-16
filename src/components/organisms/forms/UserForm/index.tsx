@@ -44,6 +44,22 @@ export const UserForm: React.FC = () => {
     // @ts-ignore
     Telegram.WebApp.sendData(userInfo);
 
+  //////////////////////////////////// TODO: For Tests
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const tgData = Telegram.WebApp.initData;
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const user = Telegram.WebApp.initDataUnsafe.user;
+
+  console.log(tgData, user);
+
+  const testName = user?.name || '';
+  const testSurname = user?.surname || '';
+
+  /////////////////////////////////////
+
   const { handleSubmit, handleChange, values, errors } = useFormik({
     initialValues: {
       name: '',
@@ -92,6 +108,10 @@ export const UserForm: React.FC = () => {
 
   return (
     <div className={styles.wrapper}>
+      <>
+        {testName}
+        {testSurname}
+      </>
       <div className={styles.mainContent}>
         <p
           className={classNames(
