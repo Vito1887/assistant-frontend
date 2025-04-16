@@ -55,8 +55,8 @@ export const UserForm: React.FC = () => {
 
   console.log(tgData, user);
 
-  const testName = user?.name || '';
-  const testSurname = user?.surname || '';
+  const testName = user?.name || 'nnnn';
+  const testSurname = user?.surname || 'uuuu';
 
   /////////////////////////////////////
 
