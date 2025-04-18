@@ -1,4 +1,5 @@
 import AntdCalendar from 'antd/lib/calendar';
+import { Dayjs } from 'dayjs';
 import React from 'react';
 import { useIntl } from 'react-intl';
 
@@ -16,14 +17,19 @@ import {
 import styles from './styles.module.css';
 
 type Props = {
-  selectedDay: string;
-  onSelect: (date: string) => void;
+  currentDay: string;
+  selectedDays?: string[];
+  onSelect: (dates: string[]) => void;
 };
 
-export const Calendar: React.FC<Props> = ({ selectedDay, onSelect }) => {
+export const Calendar: React.FC<Props> = ({
+  currentDay,
+  selectedDays = [],
+  onSelect,
+}) => {
   const intl = useIntl();
 
-  const currentDate = toDayJsDate(selectedDay);
+  const currentDate = toDayJsDate(currentDay);
 
   const shortWeekdays = weekdaysShort.map((_, index) =>
     msg(intl, { id: weekdaysShort[index].day })
@@ -38,27 +44,46 @@ export const Calendar: React.FC<Props> = ({ selectedDay, onSelect }) => {
     '\n' +
     getDate(currentDate, DateFormats.YYYY);
 
+  const handleSelect = (date: Dayjs) => {
+    if (!date || !date.isValid()) {
+      return;
+    }
+
+    const selectedDay = toShortDate(date.toString());
+
+    let newSelectedRange: string[];
+
+    if (selectedDays.includes(selectedDay)) {
+      newSelectedRange = selectedDays.filter((d) => d !== selectedDay);
+    } else {
+      newSelectedRange = [...selectedDays, selectedDay].sort();
+    }
+
+    onSelect(newSelectedRange);
+  };
+
   return (
     <AntdCalendar
       fullCellRender={(date, info) => {
-        const today = getDate(info.today) === getDate(date);
-        const isCurrent = getDate(date) === getDate(currentDate);
+        const isCurrent = getDate(info.today) === getDate(date);
         const outMonth = !isSameDate(date, currentDate, 'month');
-        const isSelectSlots = selectedDay === getDate(date);
+
+        const isSelectedDay = selectedDays.includes(
+          toShortDate(date.toString())
+        );
 
         return (
           <Day
             current={isCurrent}
             date={date}
-            today={today}
             outMonth={outMonth}
-            isSelectSlot={isSelectSlots}
+            isSelectSlot={isSelectedDay}
           />
         );
       }}
       value={currentDate}
       fullscreen={false}
-      onSelect={(value) => onSelect(toShortDate(value.toString()))}
+      onSelect={handleSelect}
       headerRender={() => (
         <div className={styles.header}>
           <p>{currentMonthYear}</p>

@@ -12,8 +12,9 @@
 }
 
 .todayWorkday {
-  color: var(--COLOR_FOREGROUND);
-  background-color: var(--COLOR_POSITIVE);
+  border: var(--SIZE_BORDER) solid var(--COLOR_POSITIVE);
+  color: var(--COLOR_POSITIVE);
+  background-color: var(--COLOR_SUCCESS_BACKGROUND);
 }
 
 .dayTitle {
@@ -25,9 +26,8 @@
 }
 
 .workday {
-  border: var(--SIZE_BORDER) solid var(--COLOR_POSITIVE);
-  color: var(--COLOR_POSITIVE);
-  background-color: var(--COLOR_SUCCESS_BACKGROUND);
+  color: var(--COLOR_FOREGROUND);
+  background-color: var(--COLOR_POSITIVE);
 }
 
 .gray {

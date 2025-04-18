@@ -63,7 +63,7 @@ const getStyle = (
   ];
   let keyStyle = 5;
 
-  if (current) {
+  if (current && !isSelectSlot) {
     keyStyle = freeSlots && isWorkDay ? 0 : 1;
   } else if (today || isSelectSlot) {
     keyStyle = freeSlots ? 2 : 3;

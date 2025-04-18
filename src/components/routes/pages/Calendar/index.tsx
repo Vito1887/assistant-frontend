@@ -14,6 +14,7 @@ const Calendar: React.FC = () => {
   const currentDate = getDate();
 
   const [date, setDate] = useState(currentDate);
+  const [selectedDays, setSelectedDays] = useState<string[]>([]);
 
   const currentWidth = SCREEN_WIDTH();
 
@@ -82,17 +83,27 @@ const Calendar: React.FC = () => {
   const getCurrentAppointmentInfo = (date?: string) =>
     JSON.stringify({ command: 'get appointment', date });
 
-  const currentAppointmentInfo = getCurrentAppointmentInfo(date);
-
   const sendAppointmentData = () =>
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    Telegram.WebApp.sendData(currentAppointmentInfo);
+    selectedDays?.map((el) =>
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      Telegram.WebApp.sendData(getCurrentAppointmentInfo(el))
+    );
+
+  const showVisits = () => {
+    sendAppointmentData();
+
+    setSelectedDays([]);
+  };
 
   return (
     <Page template="entry">
       <div className={styles.calendarBlock}>
-        <AntdCalendar selectedDay={date} onSelect={setDate} />
+        <AntdCalendar
+          currentDay={date}
+          selectedDays={selectedDays}
+          onSelect={setSelectedDays}
+        />
       </div>
 
       <div
@@ -104,7 +115,7 @@ const Calendar: React.FC = () => {
           type="button"
           variant="primarySmall"
           label={{ id: 'base.buttons.showVisits' }}
-          onClick={sendAppointmentData}
+          onClick={showVisits}
         />
       </div>
 
