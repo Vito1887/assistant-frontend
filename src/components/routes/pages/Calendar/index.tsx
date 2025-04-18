@@ -84,10 +84,10 @@ const Calendar: React.FC = () => {
     JSON.stringify({ command: 'get appointment', date });
 
   const sendAppointmentData = () =>
-    selectedDays?.map((el) =>
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      Telegram.WebApp.sendData(getCurrentAppointmentInfo(el))
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    Telegram.WebApp.sendData(
+      selectedDays?.map((el) => getCurrentAppointmentInfo(el))
     );
 
   return (
