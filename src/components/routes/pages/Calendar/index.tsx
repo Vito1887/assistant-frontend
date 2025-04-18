@@ -90,12 +90,6 @@ const Calendar: React.FC = () => {
       Telegram.WebApp.sendData(getCurrentAppointmentInfo(el))
     );
 
-  const showVisits = () => {
-    sendAppointmentData();
-
-    setSelectedDays([]);
-  };
-
   return (
     <Page template="entry">
       <div className={styles.calendarBlock}>
@@ -115,7 +109,7 @@ const Calendar: React.FC = () => {
           type="button"
           variant="primarySmall"
           label={{ id: 'base.buttons.showVisits' }}
-          onClick={showVisits}
+          onClick={sendAppointmentData}
         />
       </div>
 
