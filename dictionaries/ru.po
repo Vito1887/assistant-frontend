@@ -45,12 +45,12 @@ msgid "components.organisms.forms.UserForm.contactsBlock"
 msgstr "Контакты"
 
 msgctxt "base"
-msgid "components.organisms.forms.UserForm.locationBlock"
-msgstr "Местоположение"
+msgid "components.organisms.forms.UserForm.email"
+msgstr "Почта"
 
 msgctxt "base"
-msgid "components.organisms.forms.UserForm.mail"
-msgstr "Почта"
+msgid "components.organisms.forms.UserForm.locationBlock"
+msgstr "Местоположение"
 
 msgctxt "base"
 msgid "components.organisms.forms.UserForm.mainBlock"

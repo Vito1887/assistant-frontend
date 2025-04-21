@@ -15,10 +15,10 @@ export const base = {
 
   'components.organisms.forms.UserForm.address': 'Адрес',
   'components.organisms.forms.UserForm.city': 'Город',
-  'components.organisms.forms.UserForm.mainBlock': 'Основное',
   'components.organisms.forms.UserForm.contactsBlock': 'Контакты',
   'components.organisms.forms.UserForm.locationBlock': 'Местоположение',
-  'components.organisms.forms.UserForm.mail': 'Почта',
+  'components.organisms.forms.UserForm.email': 'Почта',
+  'components.organisms.forms.UserForm.mainBlock': 'Основное',
   'components.organisms.forms.UserForm.name': 'Имя',
   'components.organisms.forms.UserForm.notes': 'Заметки',
   'components.organisms.forms.UserForm.notesBlock': 'О себе',

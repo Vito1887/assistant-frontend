@@ -26,7 +26,7 @@ export type User = {
   surname?: string;
   specialization?: string;
   phone?: string;
-  mail?: Email;
+  email?: Email;
   telegram?: string;
   vkontakte?: string;
   city?: string;
@@ -76,7 +76,7 @@ export namespace Actions {
         surname?: string;
         specialization?: string;
         phone?: string;
-        mail?: Email;
+        email?: Email;
         telegram?: string;
         vkontakte?: string;
         city?: string;

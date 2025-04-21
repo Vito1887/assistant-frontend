@@ -39,12 +39,12 @@ const reducer = reducerWithInitialState<State>(initialState)
       surname: payload.surname,
       specialization: payload.specialization,
       phone: payload.phone,
-      mail: payload.mail,
+      email: payload.email,
       telegram: payload.telegram,
       vkontakte: payload.vkontakte,
       city: payload.city,
       address: payload.address,
-      notes: payload.address,
+      notes: payload.notes,
     },
   }));
 

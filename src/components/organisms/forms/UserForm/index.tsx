@@ -29,7 +29,7 @@ export const UserForm: React.FC = () => {
     surname,
     specialization,
     phone,
-    mail,
+    email,
     telegram,
     vkontakte,
     city,
@@ -42,7 +42,7 @@ export const UserForm: React.FC = () => {
     surname?: string,
     specialization?: string,
     phone?: string,
-    mail?: string,
+    email?: string,
     telegram?: string,
     vkontakte?: string,
     city?: string,
@@ -56,7 +56,7 @@ export const UserForm: React.FC = () => {
         surname,
         specialization,
         phone,
-        mail,
+        email,
         telegram,
         vkontakte,
         city,
@@ -75,7 +75,7 @@ export const UserForm: React.FC = () => {
     surname?: string,
     specialization?: string,
     phone?: string,
-    mail?: string,
+    email?: string,
     telegram?: string,
     vkontakte?: string,
     city?: string,
@@ -88,7 +88,7 @@ export const UserForm: React.FC = () => {
         surname,
         specialization,
         phone,
-        mail,
+        email,
         telegram,
         vkontakte,
         city,
@@ -103,7 +103,7 @@ export const UserForm: React.FC = () => {
       surname: surname || '',
       specialization: specialization || '',
       phone: phone || '',
-      mail: mail || '',
+      email: email || '',
       telegram: telegram || '',
       vkontakte: vkontakte || '',
       city: city || '',
@@ -118,7 +118,7 @@ export const UserForm: React.FC = () => {
       surname,
       specialization,
       phone,
-      mail,
+      email,
       telegram,
       vkontakte,
       city,
@@ -131,7 +131,7 @@ export const UserForm: React.FC = () => {
           surname,
           specialization,
           phone,
-          mail,
+          email,
           telegram,
           vkontakte,
           city,
@@ -144,7 +144,7 @@ export const UserForm: React.FC = () => {
         surname,
         specialization,
         phone,
-        mail,
+        email,
         telegram,
         vkontakte,
         city,
@@ -226,12 +226,12 @@ export const UserForm: React.FC = () => {
 
         <div className={styles.inputWrapper}>
           <Input
-            name="mail"
+            name="email"
             hasCross
             error={errors.name}
-            onChange={handleChange('mail')}
-            placeholder={{ id: 'components.organisms.forms.UserForm.mail' }}
-            value={values.mail}
+            onChange={handleChange('email')}
+            placeholder={{ id: 'components.organisms.forms.UserForm.email' }}
+            value={values.email}
           />
         </div>
 
